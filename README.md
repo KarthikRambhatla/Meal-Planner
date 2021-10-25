@@ -7,9 +7,17 @@ You will need a large collection of laminated paper food symbols that keep up wi
 We therefore would like to develop a meal planner app which provides individuals with learning disabilities a means of choosing their own meals and educate them on healthy balanced choices when doing so. And for carers / families it will mean they can manage this seamlessly for the first time without the need to print, laminate etc or entertain other practices. 
 Once built, it will be primarily tested on our client, but will be available for free to all families and organisations across the UK to use too. It’s purposely kept simple so that anyone can pick up and manage it and / adds in their own symbols to the library. 
 
+## Features
+TBA
+
+## Startup instructions
+TBA
 
 ## How to Use:
 To be announced at a later date
 
 ## Branching Workflow
-Please see the flowchart [here](). 
+Please see the flowchart [here]().
+
+## Project Wireframe
+To be announced at a later date
