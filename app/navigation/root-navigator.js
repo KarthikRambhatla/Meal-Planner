@@ -3,17 +3,18 @@ import { StyleSheet, View, Image } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BreakfastPlate, LunchPlate, SnackPlate, DinnerPlate, SetMealsScreen } from '../components/screens'
+import { Tabs } from '../constants'
 
 const Tab = createBottomTabNavigator();
 
 const renderMealTab = (focused, tabName) => {
   const imageSrc = focused 
-    ? require(`../assets/images/${tabName}-tab.png`) 
-    : require(`../assets/images/${tabName}-tab-inactive.png`);
+    ? require(`../assets/images/menu/${tabName}-active.png`)
+    : require(`../assets/images/menu/${tabName}.png`);
 
     return <Image
       source={imageSrc}
-      style={{width: 120, height: 26}}
+      style={{width: 240, height: 60}}
     />
 }
 
@@ -34,38 +35,38 @@ function RootNavigation() {
         }}
       >
         <Tab.Screen
-            name="Breakfast"
+            name={Tabs.Breakfast}
             component={BreakfastPlate}
             options={{
-              tabBarIcon: ({ focused }) => renderMealTab(focused, "breakfast")
+              tabBarIcon: ({ focused }) => renderMealTab(focused, Tabs.Breakfast)
             }}
         />
         <Tab.Screen
-            name="Lunch"
+            name={Tabs.Lunch}
             component={LunchPlate}
             options={{
-              tabBarIcon: ({ focused }) => renderMealTab(focused, "lunch")
+              tabBarIcon: ({ focused }) => renderMealTab(focused, Tabs.Lunch)
             }}
         />
         <Tab.Screen
-            name="Snack"
+            name={Tabs.Snack}
             component={SnackPlate}
             options={{
-              tabBarIcon: ({ focused }) => renderMealTab(focused, "snack")
+              tabBarIcon: ({ focused }) => renderMealTab(focused, Tabs.Snack)
             }}
         />
         <Tab.Screen
-            name="Dinner"
+            name={Tabs.Dinner}
             component={DinnerPlate}
             options={{
-              tabBarIcon: ({ focused }) => renderMealTab(focused, "dinner")
+              tabBarIcon: ({ focused }) => renderMealTab(focused, Tabs.Dinner)
             }}
         />
         <Tab.Screen
-            name="SetMeals"
+            name={Tabs.SetMeal}
             component={SetMealsScreen}
             options={{
-              tabBarIcon: ({ focused }) => renderMealTab(focused, "set-meals")
+              tabBarIcon: ({ focused }) => renderMealTab(focused, Tabs.SetMeal)
             }}
         />
       </Tab.Navigator>
