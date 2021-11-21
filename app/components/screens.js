@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { Text, View } from 'react-native';
+import { Mug } from '../components/drinks'
 
 const Plate = (props) => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>{props.name} Plate!</Text>
+      <Mug />
     </View>
   );
 }
