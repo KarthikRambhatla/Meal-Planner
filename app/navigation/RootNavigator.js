@@ -2,8 +2,8 @@ import * as React from 'react';
 import { StyleSheet, View, Image } from 'react-native';
 import { useTheme } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { BreakfastPlate, LunchPlate, SnackPlate, DinnerPlate, SetMealsScreen } from '../components/screens'
-import { Tabs } from '../constants'
+import { BreakfastPlate, LunchPlate, SnackPlate, DinnerPlate, SetMealsScreen } from '../components/Screens'
+import { Tabs } from '../constants/Tabs'
 
 const Tab = createBottomTabNavigator();
 
@@ -18,7 +18,7 @@ const renderMealTab = (focused, tabName) => {
     />
 }
 
-function RootNavigation() {
+const RootNavigation = () => {
   // const { colors } = useTheme();
 
   return (
@@ -76,7 +76,7 @@ function RootNavigation() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 5,
+    flex: 1,
     // alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#000'
