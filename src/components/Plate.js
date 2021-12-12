@@ -10,18 +10,22 @@ class Plate extends React.Component {
 
   render() {
     return (
-      <Container>
-        <Row>
-          <Col>
+      <Container className='bg-success' style={{ maxWidth: '100%', height: '100%', overflow: 'auto'}}>
+        <Row style={{ height: '100%'}}>
+          <Col xs='10' style={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Image
               alt="Plate"
               src={plateImage}
-              style={{ width: 600, height: 600 }}
+              style={{ height: '100%', objectFit: 'contain' }}
             />
           </Col>
-          <Col>
-            <Mug />
-            <Glass />
+          <Col xs='2' style={{ height: '100%'}}>
+            <Row xs='6' style={{ height: '50%'}}>
+              <Glass />
+            </Row>
+            <Row xs='6' style={{ height: '50%'}}>
+              <Mug />
+            </Row>
           </Col>
         </Row>
       </Container>
