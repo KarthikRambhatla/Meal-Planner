@@ -10,7 +10,7 @@ class Plate extends React.Component {
 
   render() {
     return (
-      <Container className='bg-success' style={{ maxWidth: '100%', height: '100%', overflow: 'auto'}}>
+      <Container style={{ maxWidth: '100%', height: '100%', overflow: 'auto'}}>
         <Row style={{ height: '100%'}}>
           <Col xs='10' style={{ height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <Image

@@ -7,7 +7,7 @@ class MainMenu extends React.Component{
 
     render(){
         return(
-        <Container className='bg-primary' style={{float: 'left', maxWidth: '80%', height: '100vh', padding: '1%' }}>
+        <Container style={{float: 'left', maxWidth: '80%', height: '100vh', padding: '1%', backgroundColor: '#b7e0fe'}}>
             <Plate />
             <RootNavigation />
         </Container>
