@@ -1,4 +1,4 @@
-export const Tabs = {
+export const Tab = {
     Breakfast: "Breakfast",
     Lunch: "Lunch",
     Snack: "Snack",

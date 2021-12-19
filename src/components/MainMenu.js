@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Container } from 'react-bootstrap';
-import RootNavigation from './NavComponents/RootNavigation';
+import RootNavigation from './navigation/MealTabNavigator';
 import Plate from './Plate';
 
 class MainMenu extends React.Component{
