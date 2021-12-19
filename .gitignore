@@ -4,6 +4,7 @@
 
 ### Electron ###
 dist
+build
 
 ### react ###
 .DS_*
