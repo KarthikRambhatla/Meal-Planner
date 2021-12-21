@@ -3,8 +3,8 @@ import { useDrop } from 'react-dnd';
 import { FoodItem } from '../menu/FoodItem';
 
 const style = {
-    minHeight: 'min(11.8vh, 5.5vw)',
-    minWidth: 'min(11.8vh, 5.5vw)',
+    height: 'min(12.3vh, 5.7vw)',
+    width: 'min(12.3vh, 5.7vw)',
     margin: '0.25rem 0.4rem',
     color: 'black',
     padding: '0.25rem',
@@ -12,7 +12,7 @@ const style = {
     fontSize: '0.6rem',
     fontWeight: 700,
     lineHeight: 'normal',
-    borderRadius: '9px'
+    borderRadius: '10px'
 };
 
 const FoodSlotBase = ({ accept, backgroundColor, lastDroppedItem, onDrop }) => {

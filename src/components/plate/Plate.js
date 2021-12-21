@@ -1,6 +1,6 @@
 import React from 'react';
 import { PlateSection } from './PlateSection';
-import PlateImage from '../../assets/images/plate/Plate_placeholders.png'
+import PlateImage from '../../assets/images/plate/Plate.png'
 
 const Plate = (props) => {
 

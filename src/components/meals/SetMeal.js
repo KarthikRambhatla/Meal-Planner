@@ -1,11 +1,11 @@
-import * as React from 'react';
-import { Text, View } from 'react-native';
+import React from 'react';
+import { Container } from 'react-bootstrap'
 
 const SetMeal = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Set Meal!</Text>
-    </View>
+    <Container style={{float: 'left', height: '100vh', padding: '1%', backgroundColor: '#b7e0fe'}}>
+      Functionality coming soon!
+    </Container>
   );
 }
 

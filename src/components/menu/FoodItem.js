@@ -1,7 +1,6 @@
-import React from 'react';
-import { memo } from 'react';
+import React, { memo } from 'react';
+import { Image } from "react-bootstrap";
 import { useDrag } from 'react-dnd';
-// import { ImageBackground } from 'react-native'
 
 const style = {
     cursor: 'move',
@@ -9,10 +8,8 @@ const style = {
     textAlign: 'center',
     fontSize: '0.6rem',
     fontWeight: 700,
-    minHeight: '3.6rem',
-    minWidth: '4.5rem',
-    backgroundSize: 'contain',
-    backgroundRepeat: 'no-repeat'
+    height: '4rem',
+    width: '5rem'
 };
 
 const FoodItemBase = ({ name, type, imagePath }) => {
@@ -25,7 +22,8 @@ const FoodItemBase = ({ name, type, imagePath }) => {
     }), [name, type]);
     
     return (
-        <div ref={drag} style={{ ...style, opacity, backgroundImage: `url(${imagePath})` }}>
+        <div ref={drag} style={{ ...style, opacity }}>
+            <Image src={imagePath} style={{height: '80%', width: '80%'}} />
 			{name}
 		</div>
     );

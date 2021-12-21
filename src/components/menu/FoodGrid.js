@@ -4,7 +4,7 @@ import { FoodCategory } from '../../models/FoodCategory';
 
 const FoodGridBase = () => {
 
-    const baseImagePath = '../../assets/images/foodItems';
+    const baseImagePath = '/foodItems';
 
     // collection of available food items that can be dropped onto plate
     const [foodItems] = useState([
@@ -13,7 +13,7 @@ const FoodGridBase = () => {
         { name: 'Raisins', type: FoodCategory.ok, imagePath: `${baseImagePath}/Raisins.png` },
         { name: 'Pear', type: FoodCategory.ok, imagePath: `${baseImagePath}/Pear.png` },
         { name: 'Melon', type: FoodCategory.moderation, imagePath: `${baseImagePath}/Melon.png` },
-        { name: 'Kiwi', type: FoodCategory.moderation, imagePath: `${baseImagePath}/Kiwi Fruit.png` },
+        { name: 'Kiwi', type: FoodCategory.moderation, imagePath: `${baseImagePath}/KiwiFruit.png` },
         { name: 'Pineapple', type: FoodCategory.treat, imagePath: `${baseImagePath}/Pineapple.png` },
         { name: 'Grapes', type: FoodCategory.treat, imagePath: `${baseImagePath}/Grapes.png` }
     ]);
