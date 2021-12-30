@@ -1,15 +1,20 @@
 import './App.css';
 import React from 'react';
-import { Container } from 'react-bootstrap';
-import MainMenu from './components/MainMenu';
-import SideMenu from './components/SideMenu';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Breakfast, Lunch, Dinner, Snack, SetMeal } from './components/meals';
 
 function App() {
   return (
-    <Container style={{float: 'left', maxWidth: '100%', height: '100vh', padding: '0'}}>
-      <MainMenu />
-      <SideMenu />
-    </Container>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/breakfast" element={ <Breakfast/> } />
+        <Route path="/lunch" element={ <Lunch/> } />
+        <Route path="/dinner" element={ <Dinner/> } />
+        <Route path="/snack" element={ <Snack/> } />
+        <Route path="/setMeal" element={ <SetMeal/> } />
+        <Route path="/" exact element={ <Breakfast /> } />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
