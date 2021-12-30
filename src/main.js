@@ -6,13 +6,20 @@ const url = require('url');
 let mainWindow;
 
 const startUrl = process.env.ELECTRON_START_URL || url.format({
-    pathname: path.join(__dirname, '/../build/index.html'),
+    pathname: path.join(__dirname, "../build/index.html"),
     protocol: 'file:',
     slashes: true
 });
 
 function createWindow() {
-    mainWindow = new BrowserWindow({width: 4500, height: 3000});
+    mainWindow = new BrowserWindow({
+        width: 4500, 
+        height: 3000,
+        autoHideMenuBar: true,
+        webPreferences: {
+            webSecurity: false
+        }
+    });
     mainWindow.loadURL(startUrl);
     mainWindow.on('closed', function () {
         mainWindow = null

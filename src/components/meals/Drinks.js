@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Image } from 'react-bootstrap';
-import cupImage from '../assets/images/cup/Cup-empty.png';
-import glassImage from '../assets/images/cup/Glass-empty.png';
+import cupImage from '../../assets/images/cup/Cup-empty.png';
+import glassImage from '../../assets/images/cup/Glass-empty.png';
 
 const Drink = (props) => {
   let drinkImage;
