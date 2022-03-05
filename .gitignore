@@ -557,3 +557,8 @@ crashlytics-build.properties
 
 # Zip test files for Jack
 *.zip
+Meal Planner 2022/.collabignore
+Meal Planner 2022/.vsconfig
+Meal Planner 2022/Builds/*
+Meal Planner 2022/Library/*
+Meal Planner 2022/ProjectSettings/*
